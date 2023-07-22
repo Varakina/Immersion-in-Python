@@ -1,0 +1,18 @@
+num_dec = int(input("введите число: "))
+res = ''
+DIVIDER = 2
+print(bin(num_dec))
+while num_dec > 0:
+    res = str(num_dec % DIVIDER) + res
+    num_dec //= DIVIDER
+print(res)
+
+
+num_dec = int(input("введите число: "))
+res = ''
+DIVIDER = 8
+print(oct(num_dec))
+while num_dec > 0:
+    res = str(num_dec % DIVIDER) + res
+    num_dec //= DIVIDER
+print(res)
